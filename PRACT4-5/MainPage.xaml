@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRACT4_5.MainPage" Title="Калькулятор">
+
+    <ScrollView>
+        <StackLayout >
+            <Button Text="0" x:Name="nNull" Clicked="nn_Clicked"/>
+            <Button Text="1" x:Name="nOne" Clicked="nn_Clicked"/>
+            <Button Text="2" x:Name="nTwo" Clicked="nn_Clicked"/>
+            <Button Text="3" x:Name="nThree" Clicked="nn_Clicked"/>
+            <Button Text="4" x:Name="nFour" Clicked="nn_Clicked"/>
+            <Button Text="5" x:Name="nFive" Clicked="nn_Clicked"/>
+            <Button Text="6" x:Name="nSix" Clicked="nn_Clicked"/>
+            <Button Text="7" x:Name="nSeven" Clicked="nn_Clicked"/>
+            <Button Text="8" x:Name="nEight" Clicked="nn_Clicked"/>
+            <Button Text="9" x:Name="nNine" Clicked="nn_Clicked"/>
+            <Button Text="/" x:Name="nDelenie" Clicked="nn_Clicked"/>
+            <Button Text="*" x:Name="nUMNOJ" Clicked="nn_Clicked"/>
+            <Button Text="+" x:Name="nPLUS" Clicked="nn_Clicked"/>
+            <Button Text="-"  x:Name="nMINUS" Clicked="nn_Clicked"/>
+            <Button Text="," x:Name="nZAP" Clicked="nn_Clicked"/>
+
+
+            <Button Text="del" x:Name="db" Clicked="db_Clicked"/>
+            <Button Text="="  x:Name="nDegit" Clicked="nDegit_Clicked"/>
+
+
+            <StackLayout>
+                <Entry x:Name="numtext" Placeholder="RESULT"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
