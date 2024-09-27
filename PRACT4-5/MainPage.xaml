@@ -4,32 +4,63 @@
              x:Class="PRACT4_5.MainPage" Title="Калькулятор">
 
     <ScrollView>
-        <StackLayout >
-            <Button Text="0" x:Name="nNull" Clicked="nn_Clicked"/>
-            <Button Text="1" x:Name="nOne" Clicked="nn_Clicked"/>
-            <Button Text="2" x:Name="nTwo" Clicked="nn_Clicked"/>
-            <Button Text="3" x:Name="nThree" Clicked="nn_Clicked"/>
-            <Button Text="4" x:Name="nFour" Clicked="nn_Clicked"/>
-            <Button Text="5" x:Name="nFive" Clicked="nn_Clicked"/>
-            <Button Text="6" x:Name="nSix" Clicked="nn_Clicked"/>
-            <Button Text="7" x:Name="nSeven" Clicked="nn_Clicked"/>
-            <Button Text="8" x:Name="nEight" Clicked="nn_Clicked"/>
-            <Button Text="9" x:Name="nNine" Clicked="nn_Clicked"/>
-            <Button Text="/" x:Name="nDelenie" Clicked="nn_Clicked"/>
-            <Button Text="*" x:Name="nUMNOJ" Clicked="nn_Clicked"/>
-            <Button Text="+" x:Name="nPLUS" Clicked="nn_Clicked"/>
-            <Button Text="-"  x:Name="nMINUS" Clicked="nn_Clicked"/>
-            <Button Text="," x:Name="nZAP" Clicked="nn_Clicked"/>
+        <VerticalStackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal" Margin="5,5,5,5" Spacing="5">
+                <Button Text="0" x:Name="nNull" Clicked="nn_Clicked"/>
+                <Button Text="1" x:Name="nOne" Clicked="nn_Clicked"/>
+                <Button Text="2" x:Name="nTwo" Clicked="nn_Clicked"/>
+                <Button Text="3" x:Name="nThree" Clicked="nn_Clicked"/>
+                <Button Text="4" x:Name="nFour" Clicked="nn_Clicked"/>
+
+                <Button Text="-"  x:Name="nMINUS" Clicked="nn_Clicked"/>
 
 
-            <Button Text="del" x:Name="db" Clicked="db_Clicked"/>
-            <Button Text="="  x:Name="nDegit" Clicked="nDegit_Clicked"/>
 
 
-            <StackLayout>
-                <Entry x:Name="numtext" Placeholder="RESULT"/>
             </StackLayout>
-        </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" Margin="5,5,5,5" Spacing="5">
+
+                <Button Text="5" x:Name="nFive" Clicked="nn_Clicked"/>
+                <Button Text="6" x:Name="nSix" Clicked="nn_Clicked"/>
+                <Button Text="7" x:Name="nSeven" Clicked="nn_Clicked"/>
+                <Button Text="8" x:Name="nEight" Clicked="nn_Clicked"/>
+                <Button Text="," x:Name="nZAP" Clicked="nn_Clicked"/>
+                <Button Text="(" x:Name="nSKOB1" Clicked="nn_Clicked"/>
+                <Button Text=")" x:Name="nSKOB@" Clicked="nn_Clicked"/>
+
+
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Horizontal" Margin="5,5,5,5" Spacing="5">
+                
+                <Button Text="9" x:Name="nNine" Clicked="nn_Clicked"/>
+                <Button Text="/" x:Name="nDelenie" Clicked="nn_Clicked"/>
+                <Button Text="*" x:Name="nUMNOJ" Clicked="nn_Clicked"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Orientation="Horizontal" Margin="5,5,5,5" Spacing="5">
+                <Button Text="del" x:Name="db" Clicked="db_Clicked"/>
+                <Button Text="="  x:Name="nDegit" Clicked="nDegit_Clicked"/>
+                
+            </StackLayout>
+            <StackLayout Grid.Row="4" Orientation="Horizontal" Margin="5,5,5,5" Spacing="5">
+                <Button Text="AC" x:Name="bAC" Clicked="bAC_Clicked"/>
+            </StackLayout>
+                <StackLayout>
+                    <Entry x:Name="numtext" Placeholder="RESULT"/>
+                </StackLayout>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

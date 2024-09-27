@@ -28,6 +28,8 @@
                 case "+": numtext.Text += "+"; break;
                 case "-": numtext.Text += "-"; break;
                 case ",": numtext.Text += ","; break;
+                case "(": numtext.Text += "("; break;
+                case ")": numtext.Text += ")"; break;
 
 
             }
@@ -45,6 +47,11 @@
         private void nDegit_Clicked(object sender, EventArgs e)
         {
             
+        }
+
+        private void bAC_Clicked(object sender, EventArgs e)
+        {
+            numtext.Text = "";
         }
     }
 
